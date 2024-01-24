@@ -61,7 +61,7 @@ namespace Sachin_patil_upload.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutStudent(int id, [FromBody] Student updatedStudent)
+        public async Task<IActionResult> PutStudent(int id, [FromForm] Student updatedStudent)
         {
             if (id != updatedStudent.Id)
             {
